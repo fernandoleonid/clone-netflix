@@ -1,0 +1,12 @@
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.glider-contain {
+    width: 90vw;
+}
+
+.glider-contain h2 {
+    color: var(--white);
+}

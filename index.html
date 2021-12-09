@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./vendor/glider.css" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/button.css" />
+        <link rel="stylesheet" href="./css/header.css" />
+        <link rel="stylesheet" href="./css/header-logo.css" />
+        <link rel="stylesheet" href="./css/header-nav.css" />
+        <link rel="stylesheet" href="./css/header-primary-navigation.css" />
+        <link rel="stylesheet" href="./css/header-secondary-navigation.css" />
+        <link rel="stylesheet" href="./css/header-search.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/main-preview.css" />
+        <link rel="stylesheet" href="./css/main-cards.css" />
+
+        <script src="./vendor/glider.js" defer></script>
+
+        <script src="./js/main.js" defer></script>
+        <title>Clone NetFlix</title>
+    </head>
+    <body>
+        <header>
+            <img src="./img/logo.png" alt="logo" class="logo" />
+            <nav>
+                <div class="menu-container">
+                    <div class="menu-title">
+                        <span>Navegar</span>
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                    <ul class="primary-navigation">
+                        <li><i class="fas fa-sort-up"></i></li>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Séries</a></li>
+                        <li><a href="#">Filmes</a></li>
+                        <li><a href="#">Bombando</a></li>
+                        <li><a href="#">Minha lista</a></li>
+                    </ul>
+                </div>
+
+                <div class="secondary-navigation">
+                    <label class="search-container">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" class="search-input" placeholder="Título, gente, genêros" required />
+                        <i class="fas fa-times close-icon"></i>
+                    </label>
+                    <div class="kids"><a href="">Infantil</a></div>
+                    <div class="notification"><i class="fas fa-bell"></i></div>
+                    <div class="account">
+                        <img src="./img/avatar-usuario0.png" alt="" />
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="preview">
+                <video autoplay loop class="preview-video">
+                    <source src="./videos/anime.mp4" />
+                </video>
+                <div class="preview-info">
+                    <img src="./img/demon-slayer.webp" class="preview-title" />
+                    <p class="preview-text">
+                        Demônios massacraram sua família e amaldiçoaram sua irmã. Agora Tanjiro inicia sua jornada para
+                        encontrar a cura e se vingar.
+                    </p>
+                    <div class="preview-action">
+                        <button class="button white">Assistir</button>
+                        <button class="button grey">Mais Informações</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cards">
+                <div class="glider-contain">
+                    <h2>Novidade da Semana</h2>
+                    <div class="glider">
+                        <div><img src="./img/novidades0.webp" alt="" /></div>
+                        <div><img src="./img/novidades1.jpg" alt="" /></div>
+                        <div><img src="./img/novidades2.jpg" alt="" /></div>
+                        <div><img src="./img/novidades3.jpg" alt="" /></div>
+                        <div><img src="./img/novidades4.jpg" alt="" /></div>
+                        <div><img src="./img/novidades5.jpg" alt="" /></div>
+                        <div><img src="./img/novidades6.jpg" alt="" /></div>
+                    </div>
+
+                    <button aria-label="Previous" class="glider-prev" id="prev0">«</button>
+                    <button aria-label="Next" class="glider-next" id="next0">»</button>
+                    <div role="tablist" class="dots"></div>
+                </div>
+
+                <div class="glider-contain">
+                    <h2>Assistir Novamente</h2>
+                    <div class="glider">
+                        <div><img src="./img/novamente0.jpg" alt="" /></div>
+                        <div><img src="./img/novamente1.jpg" alt="" /></div>
+                        <div><img src="./img/novamente2.jpg" alt="" /></div>
+                        <div><img src="./img/novamente3.jpg" alt="" /></div>
+                        <div><img src="./img/novamente4.jpg" alt="" /></div>
+                        <div><img src="./img/novamente5.jpg" alt="" /></div>
+                        <div><img src="./img/novamente6.jpg" alt="" /></div>
+                    </div>
+
+                    <button aria-label="Previous" class="glider-prev" id="prev1">«</button>
+                    <button aria-label="Next" class="glider-next" id="next1">»</button>
+                    <div role="tablist" class="dots"></div>
+                </div>
+
+                <div class="glider-contain">
+                    <h2>Em alta</h2>
+                    <div class="glider">
+                        <div><img src="./img/alta0.jpg" alt="" /></div>
+                        <div><img src="./img/alta1.jpg" alt="" /></div>
+                        <div><img src="./img/alta2.jpg" alt="" /></div>
+                        <div><img src="./img/alta3.jpg" alt="" /></div>
+                        <div><img src="./img/alta4.jpg" alt="" /></div>
+                        <div><img src="./img/alta5.jpg" alt="" /></div>
+                        <div><img src="./img/alta6.jpg" alt="" /></div>
+                    </div>
+
+                    <button aria-label="Previous" class="glider-prev" id="prev2">«</button>
+                    <button aria-label="Next" class="glider-next" id="next2">»</button>
+                    <div role="tablist" class="dots"></div>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>
