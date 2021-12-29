@@ -28,13 +28,6 @@ const checkSearch = ({target}) => {
 
 startCarousel();
 
+document.querySelector('.preview-video').addEventListener('click', ({target}) => (target.muted = !target.muted));
 document.querySelector('.search-icon').addEventListener('click', activeSearch);
 document.querySelector('.search-input').addEventListener('focusout', checkSearch);
-
-// window.onresize = () => {
-//     const videoHeight = document.querySelector('.bg-video').offsetHeight - 70;
-//     const sectionPreview = document.querySelector('.preview');
-
-//     sectionPreview.style.height = `${videoHeight}px`;
-//     console.log(`${videoHeight}px`);
-// };
